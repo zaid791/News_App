@@ -1,0 +1,80 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.newsapp.View.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_bookmark2"
+            app:destination="@id/bookmark" />
+        <action
+            android:id="@+id/action_home2_to_search2"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_home_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmark"
+        android:name="com.example.newsapp.View.fragments.Bookmark"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark">
+        <action
+            android:id="@+id/action_bookmark2_to_home2"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_bookmark2_to_search2"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_bookmark_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.newsapp.View.fragments.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_search2_to_bookmark2"
+            app:destination="@id/bookmark" />
+        <action
+            android:id="@+id/action_search2_to_home2"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_search_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.newsapp.View.fragments.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_article">
+        <action
+            android:id="@+id/action_articleFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_articleFragment_to_webView2"
+            app:destination="@id/webView2" />
+        <action
+            android:id="@+id/action_articleFragment_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_articleFragment_to_bookmark"
+            app:destination="@id/bookmark" />
+    </fragment>
+    <fragment
+        android:id="@+id/webView2"
+        android:name="com.example.newsapp.View.fragments.WebView"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view">
+        <action
+            android:id="@+id/action_webView2_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+</navigation>
