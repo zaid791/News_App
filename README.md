@@ -15,7 +15,7 @@ In an era defined by information, staying updated with the latest news has becom
 
 ![Home Page](https://github.com/zaid791/News_App/blob/main/photo_2024-03-31_17-26-55.jpg)
 ![Search Section](https://github.com/zaid791/News_App/blob/main/photo_2024-03-31_17-26-50.jpg)
-![Bookmark Section]([screenshots/bookmark_section.png](https://github.com/zaid791/News_App/blob/main/photo_2024-03-31_17-26-46.jpg))
+![Bookmark Section](https://github.com/zaid791/News_App/blob/main/photo_2024-03-31_17-26-46.jpg)
 
 ## Technologies Used
 
